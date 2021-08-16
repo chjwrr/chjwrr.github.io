@@ -1,28 +1,183 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hank Quinlan, Horrible Cop</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="blurb">
-                <h1>Hi there, I'm Hank Quinlan!</h1>
-                <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-            </div><!-- /.blurb -->
-        </div><!-- /.container -->
-        <footer>
-            <ul>
-                <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-                <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-            </ul>
-        </footer>
-    </body>
+
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- 配置 -->
+		<title>good</title>
+    <meta name="description" content="good">
+		<meta name="keywords" content="good" />
+
+    <!-- 公共css引入 -->
+		<link rel="stylesheet" type="text/css" href="global.css" />
+
+    <!-- 三方库引用 -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+
+    <!-- 图片展示动画 -->
+    <link rel="stylesheet" type="text/css" href="css/pictureAnimation/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/pictureAnimation/default.css">
+    <link href="css/pictureAnimation/Icomoon/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/pictureAnimation/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/pictureAnimation/sim-prev-anim.css" rel="stylesheet" type="text/css" />
+
+    <!-- id为# class为. -->
+    <style type="text/css">
+			@font-face {
+				font-family: FRABK;
+				src: url(font/FRABK.TTF);
+			}
+      /* 背景动画 */
+      #particles-js{
+        width: 100%;
+        height: 100%;
+        background-color: #b61924;
+        /* background-image: url('img/123.jpg'); */
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+      }
+      .contentBody{
+        background-color:blue;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 768px){
+
+      }
+		</style>
+		<script type="text/javascript">
+       toastr.options = {
+        // toastr配置
+        "debug": false, //是否使用debug模式
+        "positionClass": "toast-top-center",//显示的动画位置
+        "showDuration": "400", //显示的动画时间
+        "timeOut": "2000", //展现时间
+        "showEasing": "swing", //显示时的动画缓冲方式
+        "hideEasing": "linear", //消失时的动画缓冲方式
+        "showMethod": "fadeIn", //显示时的动画方式
+        "hideMethod": "fadeOut" //消失时的动画方式
+      }
+      function imageClick(index) {
+        alert(index)
+      }
+		</script>
+	</head>
+	<body>
+    <div id="particles-js">
+      <div class="contentBody">
+
+
+
+
+
+        <div class="albums-tab-thumb sim-anim-1">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0005.jpg"/>
+					<img src="img/studio_0006.jpg"/>
+					<img src="img/studio_0001.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-2">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0010.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-3">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0005.jpg"/>
+					<img src="img/studio_0006.jpg"/>
+					<img src="img/studio_0007.jpg"/>
+					<img src="img/studio_0008.jpg"/>
+					<img src="img/studio_0011.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-4">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0005.jpg"/>
+					<img src="img/studio_0006.jpg"/>
+					<img src="img/studio_0007.jpg"/>
+					<img src="img/studio_0008.jpg"/>
+					<img src="img/studio_0009.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-5">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0005.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-6">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0009.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0005.jpg"/>
+					<img src="img/studio_0006.jpg"/>
+					<img src="img/studio_0007.jpg"/>
+					<img src="img/studio_0008.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-7">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-8">
+					<img src="img/studio_0001.jpg"/>
+					<img src="img/studio_0002.jpg"/>
+					<img src="img/studio_0009.jpg"/>
+					<img src="img/studio_0004.jpg"/>
+					<img src="img/studio_0005.jpg"/>
+					<img src="img/studio_0006.jpg"/>
+					<img src="img/studio_0007.jpg"/>
+					<img src="img/studio_0008.jpg"/>
+					<img src="img/studio_0003.jpg"/>
+				</div>
+        <div class="albums-tab-thumb sim-anim-9">
+					<img onclick="imageClick(1)" src="img/studio_0001.jpg"/>
+					<img onclick="imageClick(2)" src="img/studio_0002.jpg"/>
+					<img onclick="imageClick(3)" src="img/studio_0003.jpg"/>
+					<img onclick="imageClick(4)" src="img/studio_0004.jpg"/>
+					<img onclick="imageClick(5)" src="img/studio_0005.jpg"/>
+					<img onclick="imageClick(6)" src="img/studio_0009.jpg"/>
+					<img onclick="imageClick(7)" src="img/studio_0007.jpg"/>
+					<img onclick="imageClick(8)" src="img/studio_0008.jpg"/>
+					<img onclick="imageClick(9)" src="img/studio_0006.jpg"/>
+				</div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="particles/particles.js"></script>
+    <script src="particles/js/app.js"></script>
+
+    
+    
+	</body>
 </html>
