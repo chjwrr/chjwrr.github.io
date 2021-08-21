@@ -19,22 +19,11 @@
 		<link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
 		<script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
 
-		<!-- <audio  autoplay  id="vd"
-		loop
-		src="http://m701.music.126.net/20210821184130/4954af6bf8b5815af00b238c5926bd82/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8693507862/d323/155d/fd89/c173d79cedf8498906b078d2653e49d1.mp3">
-			您的浏览器不支持 audio 标签。
-			</audio>
-		
-		 -->
-
-			<audio autoplay="autoplay">
-				<source src="img/HappyBirthdayingleCats.mp3" 
-				type="audio/mp3" />
-			Your browser does not support the audio element.
-			</audio>
-
-
-
+		<audio autoplay="autoplay" loop id="audio">
+			<source src="img/HappyBirthdayingleCats.mp3" 
+			type="audio/mpeg" />
+		Your browser does not support the audio element.
+		</audio>
 
     <style type="text/css">
 			@font-face {
@@ -78,6 +67,10 @@
       }
 		</style>
 		<script type="text/javascript">
+			$(function(){
+				var audio = document.getElementById('audio')
+				audio.play()
+      })
        toastr.options = {
         // toastr配置
         "debug": false, //是否使用debug模式
@@ -89,26 +82,27 @@
         "showMethod": "fadeIn", //显示时的动画方式
         "hideMethod": "fadeOut", //消失时的动画方式
       }
+			function play(){
+				var audio = document.getElementById('audio')
+				audio.play()
+			}
 			function begin(){
-
 				const name = document.getElementById("name").value
 				const psd = document.getElementById("psd").value
 
-				// if (!name || name != "乖乖"){
-				// 	toastr.warning("两个字(＾Ｕ＾)ノ~ＹＯ")
-				// 	return
-				// }
-				// if (!psd || psd != "717"){
-				// 	toastr.warning("今天是什么日子(＾Ｕ＾)ノ~ＹＯ")
-				// 	return
-				// }
+				if (!name || name != "乖乖"){
+					toastr.warning("两个字(＾Ｕ＾)ノ~ＹＯ")
+					return
+				}
+				if (!psd || psd != "717"){
+					toastr.warning("今天是什么日子(＾Ｕ＾)ノ~ＹＯ")
+					return
+				}
 				window.location.href = 'birthday.html'
 			}
 		</script>
 	</head>
-	<body>
-
-
+	<body onclick="play()">
    <div class="background">
 		<input class="input" id="name" type="text" placeholder="昵称ლ(°◕‵ƹ′◕ლ)"/>
 		<input class="input" id="psd" type="password" placeholder="ლ(°◕‵ƹ′◕ლ)密码"/>
